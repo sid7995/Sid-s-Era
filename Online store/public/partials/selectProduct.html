@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class='selectProduct'>
+<head>
+    <meta charset="UTF-8">
+    <title>HOT WHEELS</title>
+</head>
+<body>
+
+    <select (change)="getName($event.target.value)">
+        <option>Select Type</option>
+        <option *ngFor="let m of type" value= {{m}}>
+            {{m}}
+        </option>
+    </select>
+
+    <select id="name" (change)="getProduct($event.target.value)">
+        <!--<select>-->
+        <option>Select Name</option>
+        <option *ngFor="let m of name" value= {{m}}>
+            {{m}}
+        </option>
+    </select>
+    <table>
+        <tbody>
+        <tr>{{product?.type}}</tr>
+        <tr>{{product?.name}}</tr>
+        <tr>{{product?.price}}</tr>
+        </tbody>
+    </table>
+</body>
+</div>
+</html>

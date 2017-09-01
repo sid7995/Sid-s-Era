@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+        <div class="appointment message">
+            <p>Dear Customer,</p><br>
+            <p>Your Appointment has been Booked on</p>
+            <script>
+                var d = ((new Date().getDate())%30)+2;
+                document.write(d);
+            </script>
+            <p>of this month!!!</p>
+            <input type='button' value='GO HOME' (click)='goHome()'/>
+        </div>
+</body>
+</html>
